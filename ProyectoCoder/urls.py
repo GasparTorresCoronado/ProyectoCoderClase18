@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from AppCoder.views import familiar
+from AppCoder.views import familiar, familiar_detalles
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("familiar/", familiar)
+    path("familiar/", familiar),
+    path("familiares/",familiar_detalles),
 ]
